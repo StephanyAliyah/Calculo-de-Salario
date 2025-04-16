@@ -36,10 +36,8 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        // Substitui vírgula por ponto, se necessário
         salarioTexto = salarioTexto.replace(",", ".");
 
-        // Conversão direta para número (cuidado: ainda pode causar erro se o texto for inválido)
         double salario = Double.parseDouble(salarioTexto);
         double novoSalario;
 
